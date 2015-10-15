@@ -1,6 +1,10 @@
 #!/bin/bash
 
-today=$(date +"%d-%m-%Y")
-time=$(date +"%H:%M:%S")
-printf -v d "Current User:\t%s\nDate:\t\t%s @ %s\n" $USER $today $time
-echo "$d"
+a=()
+b=("apple" "banana" "cherry")
+echo ${b[2]}
+b[5]="kiwi"
+b+=("mango")
+echo ${b[@]}
+
+echo ${b[@]: -1}

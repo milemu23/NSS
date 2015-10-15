@@ -1,3 +1,12 @@
+Last login: Wed Sep 30 15:03:09 on console
+Michelles-MacBook-Pro:~ Munk13$ pwd
+/Users/Munk13
+Michelles-MacBook-Pro:~ Munk13$ cd ~/Desktop
+Michelles-MacBook-Pro:Desktop Munk13$ cd NSS
+Michelles-MacBook-Pro:NSS Munk13$ ExerciseFiles
+-bash: ExerciseFiles: command not found
+Michelles-MacBook-Pro:NSS Munk13$ cd ExerciseFiles
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ clear
 
 
 
@@ -13,6 +22,48 @@
 
 
 
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+./my.sh: line 1: !/bin/bash: No such file or directory
+Current User:	Munk13
+Date:		15=102015 @ 15:05:23
+
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ chmod +x my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+./my.sh: line 1: !/bin/bash: No such file or directory
+Current User:	Munk13
+Date:		15=102015 @ 15:05:43
+
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ my.sh
+-bash: my.sh: command not found
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+Current User:	Munk13
+Date:		15=102015 @ 15:07:41
+
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+Current User:	Munk13
+Date:		15-10-2015 @ 15:08:55
+
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano  my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ clear
+
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+cherry
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+cherry
+apple banana cherry kiwi mango
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+cherry
+apple banana cherry kiwi mango
+mango
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ $BASH_VERSION
+-bash: 3.2.57(1)-release: command not found
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
 
 
 
@@ -21,50 +72,28 @@
 
 
 
-Michelles-iMac:ExerciseFiles Munk$ nano my.sh
-Michelles-iMac:ExerciseFiles Munk$ clear
 
-Michelles-iMac:ExerciseFiles Munk$ a="hello"
-Michelles-iMac:ExerciseFiles Munk$ b="world"
-Michelles-iMac:ExerciseFiles Munk$ c=$a$b
-Michelles-iMac:ExerciseFiles Munk$ echo $c
-helloworld
-Michelles-iMac:ExerciseFiles Munk$ 
-Michelles-iMac:ExerciseFiles Munk$ echo ${#a}
-5
-Michelles-iMac:ExerciseFiles Munk$ d=#{c:3}
-Michelles-iMac:ExerciseFiles Munk$ echo $d
-#{c:3}
-Michelles-iMac:ExerciseFiles Munk$ d=${c:3}
-Michelles-iMac:ExerciseFiles Munk$ echo $d
-loworld
-Michelles-iMac:ExerciseFiles Munk$ echo ${c: -4:3}
-orl
-Michelles-iMac:ExerciseFiles Munk$ fruit="apple banana banana cherry"
-Michelles-iMac:ExerciseFiles Munk$ echo ${fruit/banana/durian}
-apple durian banana cherry
-Michelles-iMac:ExerciseFiles Munk$ echo ${fruit//banana/durian}
-apple durian durian cherry
-Michelles-iMac:ExerciseFiles Munk$ nano my.sh
-Michelles-iMac:ExerciseFiles Munk$ ./my.sh
-ERROR: Something went wrong.
-Michelles-iMac:ExerciseFiles Munk$ nano my.sh
-Michelles-iMac:ExerciseFiles Munk$ ./my.sh
-ERROR: Something went wrong.
-Michelles-iMac:ExerciseFiles Munk$ nano  my.sh
-Michelles-iMac:ExerciseFiles Munk$ nano my.sh
-Michelles-iMac:ExerciseFiles Munk$ ./my.sh
-./my.sh: line 3: flashingred: command not found
-ERROR: Something went wrong.
-Michelles-iMac:ExerciseFiles Munk$ nano my.sh
-Michelles-iMac:ExerciseFiles Munk$ ./my.sh
-./my.sh: line 3: flashingred: command not found
-ERROR: Something went wrong.
-Michelles-iMac:ExerciseFiles Munk$ nano ./my.sh
-Michelles-iMac:ExerciseFiles Munk$ ./my.sh
-./my.sh: line 3: flashred: command not found
-ERROR: Something went wrong.
-Michelles-iMac:ExerciseFiles Munk$ nano my.sh
-Michelles-iMac:ExerciseFiles Munk$ ./my.sh
-ERROR: Something went wrong.
-Michelles-iMac:ExerciseFiles Munk$ 
+  GNU nano 2.0.6               File: my.sh                                      
+
+#!/bin/bash
+
+a=()
+b=("apple" "banana" "cherry")
+echo ${b[2]}
+b[5]="kiwi"
+b+=("mango")
+echo ${b[@]}
+
+echo ${b[@]: -1}
+
+
+
+
+
+
+
+
+
+                               [ Read 10 lines ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
