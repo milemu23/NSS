@@ -64,6 +64,7 @@ mango
 Michelles-MacBook-Pro:ExerciseFiles Munk13$ $BASH_VERSION
 -bash: 3.2.57(1)-release: command not found
 Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ clear
 
 
 
@@ -72,28 +73,53 @@ Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
 
 
 
-
-  GNU nano 2.0.6               File: my.sh                                      
-
-#!/bin/bash
-
-a=()
-b=("apple" "banana" "cherry")
-echo ${b[2]}
-b[5]="kiwi"
-b+=("mango")
-echo ${b[@]}
-
-echo ${b[@]: -1}
-
-
-
-
-
-
-
-
-
-                               [ Read 10 lines ]
-^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
-^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ echo "Some text" > file.txt
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ cat file.txt
+Some text
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ > file.txt
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ cat file.txt
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ echo "Some text" > file.txt
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ echo "Some more text" >> file.txt
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ cat file.txt
+Some text
+Some more text
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+./my.sh: line 7: file.text: No such file or directory
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano my.sh
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ./my.sh
+Some text
+Some more text
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ cat < file.txt
+Some text
+Some more text
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ nano ftp.txt
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ ftp -n < ftp.txt
+Trying 198.60.22.13...
+Connected to mirrors.xmission.com.
+220-Welcome to XMission's Mirror Server
+220-
+220-This server is available via:
+220-
+220-	http://mirrors.xmission.com
+220-	https://mirrors.xmission.com
+220-	ftp://mirrors.xmission.com
+220-	rsync://mirrors.xmission.com
+220-	nfs://mirrors.xmission.com/mirrors
+220-
+220-Compression with rsyncd(8) is disabled. Please do use "-z" when syncing, as it
+220-is disabled.
+220-
+220-If you find these mirrors useful, please consider XMission services.  More
+220-information is available at:
+220-
+220-	http://xmission.com
+220 
+331 Please specify the password.
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+200 Switching to ASCII mode.
+(remote-file) usage: ch mode remote-file
+221 Goodbye.
+Michelles-MacBook-Pro:ExerciseFiles Munk13$ 

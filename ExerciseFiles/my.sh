@@ -1,10 +1,8 @@
 #!/bin/bash
 
-a=()
-b=("apple" "banana" "cherry")
-echo ${b[2]}
-b[5]="kiwi"
-b+=("mango")
-echo ${b[@]}
+i=1
+while read f; do
+	echo $f
+	((i++))
+done < file.txt
 
-echo ${b[@]: -1}
