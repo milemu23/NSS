@@ -1,6 +1,6 @@
 #!/bin/bash
 
-flashingred=$(tput setab 0; tput setaf 1; tput blink)
-red=$(tput setab 0; tput setaf 1)
-none=$(tput sgr0)
-echo -e $flashingred"ERROR: "$none$red"Something went wrong."$none
+today=$(date +"%d-%m-%Y")
+time=$(date +"%H:%M:%S")
+printf -v d "Current User:\t%s\nDate:\t\t%s @ %s\n" $USER $today $time
+echo "$d"
