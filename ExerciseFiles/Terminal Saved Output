@@ -45,6 +45,26 @@ Michelles-iMac:ExerciseFiles Munk$ echo ${fruit/banana/durian}
 apple durian banana cherry
 Michelles-iMac:ExerciseFiles Munk$ echo ${fruit//banana/durian}
 apple durian durian cherry
+Michelles-iMac:ExerciseFiles Munk$ nano my.sh
+Michelles-iMac:ExerciseFiles Munk$ ./my.sh
+ERROR: Something went wrong.
+Michelles-iMac:ExerciseFiles Munk$ nano my.sh
+Michelles-iMac:ExerciseFiles Munk$ ./my.sh
+ERROR: Something went wrong.
+Michelles-iMac:ExerciseFiles Munk$ nano  my.sh
+Michelles-iMac:ExerciseFiles Munk$ nano my.sh
+Michelles-iMac:ExerciseFiles Munk$ ./my.sh
+./my.sh: line 3: flashingred: command not found
+ERROR: Something went wrong.
+Michelles-iMac:ExerciseFiles Munk$ nano my.sh
+Michelles-iMac:ExerciseFiles Munk$ ./my.sh
+./my.sh: line 3: flashingred: command not found
+ERROR: Something went wrong.
+Michelles-iMac:ExerciseFiles Munk$ nano ./my.sh
+Michelles-iMac:ExerciseFiles Munk$ ./my.sh
+./my.sh: line 3: flashred: command not found
+ERROR: Something went wrong.
+Michelles-iMac:ExerciseFiles Munk$ nano my.sh
+Michelles-iMac:ExerciseFiles Munk$ ./my.sh
+ERROR: Something went wrong.
 Michelles-iMac:ExerciseFiles Munk$ 
-
-
