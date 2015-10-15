@@ -1,11 +1,18 @@
 #!/bin/bash
-#This is a basic bash script.
-a=Hello
-b="Good morning!"
-c=16
 
-echo $a
-echo $b
-echo $c
+[[ "cat" == "cat" ]]
+echo $?
 
-echo "$a, $b I have $c apples."
+[[ "cat" == "dog" ]]
+echo $?
+
+[[ 20 > 100 ]]
+echo $?
+
+[[ 20 -gt 100 ]]
+echo $?
+
+a=""
+b="cat"
+[[ -z $a && -n $b ]]
+echo $?
