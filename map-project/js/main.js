@@ -4,8 +4,8 @@
 $(function(){
     try{
         IPMapper.initializeMap("map");
-            var ipArray;
-            $.getJSON('ipaddresses.json')
+            var ipArray = $.getJSON('ipaddresses.json')
+            console.log(ipArray.location);
             .done(function(data) {
                 ipArray = data;
             })
