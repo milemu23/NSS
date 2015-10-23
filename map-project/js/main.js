@@ -8,6 +8,8 @@ $(function(){
                 console.log(json);
             done(function(data) {
                 ipArray = (ipaddress);
+                
+                console.log(ipaddress);
             });
             });
         IPMapper.addIPArray(ipArray);
