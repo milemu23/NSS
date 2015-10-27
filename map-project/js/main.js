@@ -10,7 +10,7 @@
                 success: function(data) {
             
             var ipAdd = data['ipaddress'];        
-            IPMapper.addIPMarker(ipAdd.ipaddress);
+            IPMapper.addIPMarker(ipAdd.val());
         } 
 			});
 		 });
