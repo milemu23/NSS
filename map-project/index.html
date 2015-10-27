@@ -14,7 +14,9 @@
         
     </head>
     <body>
-        <div id="map" height="500" width="800"></div>
+         <input id="ip" name="ip" type="text" />
+    <button onclick="IPMapper.addIPMarker($('#ip').val());">Geocode</button>
+    <div id="map" style="height: 500px;"></div>
         
     </body>
 </html>
