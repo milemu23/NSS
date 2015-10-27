@@ -1,8 +1,7 @@
 //Michelle Munksgard
 //Javascript Map
-
-   $(document).ready(function(){
-        try{
+"use strict";
+   $(function(){
             IPMapper.initializeMap("map");
             
             $.ajax({
@@ -12,6 +11,7 @@
             
             var ipArray = JSON.parse(data);        
             
-            IPMapper.addIPMarker(json.ipaddress);
+            IPMapper.addIPMarker(ipArray.ipaddress);
         } 
+			});
 		 });
