@@ -7,7 +7,7 @@
             
             var ipArray = $.getJSON('ipaddresses.json', function(data){
                 console.log(data);   
-            }
+            });
             
             IPMapper.addIPMarker("111.111.111.111");
         } catch(e){
