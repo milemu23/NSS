@@ -7,7 +7,7 @@ $(function(){
         
 		var ipArray = $.getJSON('ipaddresses.json', function(data){
                 console.log(data);
-                                        ipArray = (data);
+                                        ipArray = (data);adfasdf
                 
             });
         IPMapper.addIPArray(ipArray);
