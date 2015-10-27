@@ -7,4 +7,5 @@
             IPMapper.addIPMarker("111.111.111.111");
         } catch(e){
             //handle error
-        };
+        }
+		 });
