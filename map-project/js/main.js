@@ -9,7 +9,7 @@
                 dataType: "text",
                 success: function(data) {
             
-            var ipArray = JSON.parse(data);        
+            var ipArray = $.parseJSON(data);        
             
             IPMapper.addIPMarker(ipArray.ipaddress);
         } 
