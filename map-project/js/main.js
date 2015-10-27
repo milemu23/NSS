@@ -1,15 +1,18 @@
 //Michelle Munksgard
 //Javascript Map
 
-   $(function(){
+   $(document).ready(function(){
         try{
             IPMapper.initializeMap("map");
             
-            var ipArray = JSON.parse(data);
-            console.log(ipaddress[0]);
-        
+            $.ajax({
+                url: "ipaddresses.json",
+                dataType: "text",
+                success: function(data) {
             
-            IPMapper.addIPMarker("111.111.111.111");
+            var ipArray = JSON.parse(data);        
+            
+            IPMapper.addIPMarker(json.ipaddress);
         } catch(e){
             //handle error
         }
