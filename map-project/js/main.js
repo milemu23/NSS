@@ -5,9 +5,9 @@
         try{
             IPMapper.initializeMap("map");
             
-            var ipArray = $.getJSON('ipaddresses.json', function(data){
-                console.log(data);   
-            });
+            var ipArray = JSON.parse(data);
+            console.log(location[2]);
+        
             
             IPMapper.addIPMarker("111.111.111.111");
         } catch(e){
