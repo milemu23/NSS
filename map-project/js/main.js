@@ -9,8 +9,8 @@
                 dataType: "jsonp",
                 success: function(data) {
             
-            var ipAdd = data['ipaddress'];        
-            IPMapper.addIPMarker($(ipAdd).val());
+            var ipAdd = data.ipaddress;        
+            IPMapper.addIPMarker(ipAdd);
         } 
 			});
 		 });
