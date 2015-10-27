@@ -13,7 +13,5 @@
             var ipArray = JSON.parse(data);        
             
             IPMapper.addIPMarker(json.ipaddress);
-        } catch(e){
-            //handle error
-        }
+
 		 });
