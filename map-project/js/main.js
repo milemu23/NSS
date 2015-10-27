@@ -6,11 +6,10 @@ $(function(){
         IPMapper.initializeMap("map");
             var ipArray = $.getJSON('ipaddresses.json', function(json){
                 console.log(json);
-            done(function(data) {
-                ipArray = (ipaddress);
                 
-                console.log(ipaddress);
-            });
+                ipArray = ("ipaddress");
+                
+                
             });
         IPMapper.addIPArray(ipArray);
     } catch(e){
