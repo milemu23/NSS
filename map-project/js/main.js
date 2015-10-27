@@ -1,7 +1,7 @@
 //Michelle Munksgard
 //Javascript Map
-"use strict";
    $(function(){
+	   "use strict";
             IPMapper.initializeMap("map");
             
             $.ajax({
