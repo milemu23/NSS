@@ -6,12 +6,11 @@
             
             $.ajax({
                 url: "ipaddresses.json",
-                dataType: "text",
+                dataType: "jsonp",
                 success: function(data) {
             
-            var ipArray = $.parseJSON(data);        
-            
-            IPMapper.addIPMarker(ipArray.ipaddress);
+            var ipAdd = data['ipaddress'];        
+            IPMapper.addIPMarker(ipAdd.ipaddress);
         } 
 			});
 		 });
