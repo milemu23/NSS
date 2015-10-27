@@ -4,11 +4,10 @@
 $(function(){
     try{
         IPMapper.initializeMap("map");
-            var ipArray = $.getJSON('ipaddresses.json', function(json){
-                console.log(json);
-                
-                ipArray = ("ipaddress");
-                
+        
+		var ipArray = $.getJSON('ipaddresses.json', function(data){
+                console.log(data);
+                                        ipArray = (data);
                 
             });
         IPMapper.addIPArray(ipArray);
