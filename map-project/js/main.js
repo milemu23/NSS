@@ -1,6 +1,6 @@
 //Michelle Munksgard
 //Javascript Map
-   $(function(){
+   $(document).ready(function(){
 	   "use strict";
             IPMapper.initializeMap("map");
             
