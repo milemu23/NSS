@@ -8,7 +8,7 @@ cp -r /Users/Munk13/Desktop/NSS/cron-assignment/old/* /Users/Munk13/Desktop/NSS/
 
 cd /Users/Munk13/Desktop/NSS/cron-assignment/archive
 
-for filename in $ARCHIVE/ *; do mv "$filename" "old_$filename";
+for filename in /Users/Munk13/Desktop/NSS/cron-assignment/archive *; do mv "$filename" "old_$filename";
 done
 
 /bin/bash /Users/Munk13/Desktop/NSS/cron-assignment/old/old_ips.sh
