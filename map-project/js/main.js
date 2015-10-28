@@ -9,6 +9,7 @@
            for (var i = 0; i < ipArray.ipaddresses.length; i++) {
                var ips = ipArray.ipaddresses[i];
                IPMapper.addIPArray(ips);
+           }
            
        } catch(e){
            
