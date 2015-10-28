@@ -2,7 +2,7 @@
 //Javascript Map
    $(document).ready(function(){
 	   "use strict";
-	   try{
+	  
             IPMapper.initializeMap("map");
            
             
@@ -16,8 +16,7 @@
 			
         } 
 		});
-			}catch(e){
-			}
+			
 			
 			
 		 });
