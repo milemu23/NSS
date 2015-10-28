@@ -20,7 +20,7 @@
 			
         } 
 		})
-		 console.log("Success!");	
+		 console.log(ipArray);	
 			
 			
 		 });
