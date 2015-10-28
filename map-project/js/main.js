@@ -13,13 +13,10 @@
                 success: function(data) {
                     
                     console.log("Success!");
-                    var ipArray = data.ipaddresses.ipaddress;
+                    var ipArray = $.parseJSON(data);
                     for (var i = 0; i < ipArray.length; i++){
                         ipArray[i].ipaddress;
-                        
-                        console.log(ipArray);
                     }
-			
         } 
 		})
 		 	
