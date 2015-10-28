@@ -5,9 +5,9 @@
 	   try {
             IPMapper.initializeMap("map");
            
-            var ipArray = JSON.parse(data);
-           for (var i = 0; i < ipArray.ipaddresses.length; i++) {
-               var ips = ipArray.ipaddresses[i].val();
+            var ipArray = JSON.parse(ipaddresses);
+           for (var i = 0; i < ipArray.length; i++) {
+               var ips = ipArray[i].val();
                IPMapper.addIPArray(ips);
            }
            
