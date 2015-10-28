@@ -5,7 +5,7 @@
             IPMapper.initializeMap("map");
             
             $.ajax({
-                url: "js/pTest.json",
+                url: "js/ipTest.json",
                 dataType: "jsonp",
                 success: function(data) {
             
