@@ -14,7 +14,7 @@
                     
                     console.log("Success!");
                 
-                    for (var i = 0; i < data.length; i++){
+                    for (var i = 0; i < data.ipaddresses.length; i++){
                         ipaddress.push(data[i].ipaddress);
                     }
 			
