@@ -7,8 +7,8 @@
            
             var ipArray = JSON.parse(data);
            for (var i = 0; i < ipArray.ipaddresses.length; i++) {
-               var ips = ipArray.ipaddresses[i];
-               IPMapper.addIPArray(ips.val());
+               var ips = ipArray.ipaddresses[i].val();
+               IPMapper.addIPArray(ips);
            }
            
        } catch(e){
