@@ -7,7 +7,7 @@
             
             $.ajax({
                 url: "js/ipTest.json",
-                dataType: "jsonp",
+                dataType: "json",
                 success: function(data) {
                
             var ipAdd = data.ipaddresses; 
