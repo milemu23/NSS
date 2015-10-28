@@ -12,7 +12,7 @@
                
             var ipAdd = data.ipaddresses; 
 			   
-            IPMapper.addIPArray(ipAdd.val());
+            IPMapper.addIPArray(ipAdd.ipaddress);
 			
         } 
 		});
