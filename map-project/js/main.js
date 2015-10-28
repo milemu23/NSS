@@ -7,7 +7,7 @@
            
            $.getJSON("ipaddresses.json", function( data ){
                
-           console.log(data.ipaddresses.ipaddress);
+           console.log(data.ipaddress);
            });
            
            for (var i = 0; i < ipArray.length; i++) {
