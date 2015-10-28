@@ -2,6 +2,7 @@
 //Javascript Map
    $(document).ready(function(){
 	   "use strict";
+	   try{
             IPMapper.initializeMap("map");
             
             $.ajax({
@@ -12,6 +13,11 @@
             var ipAdd = data.ipaddresses; 
 			   
             IPMapper.addIPArray(ipAdd.ipaddress.val());
+			
         } 
-			});
+		});
+			}catch(e){
+			}
+			
+			
 		 });
