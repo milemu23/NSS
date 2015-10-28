@@ -16,11 +16,13 @@
                     var ipArray = data.ipaddresses.ipaddress;
                     for (var i = 0; i < ipArray.length; i++){
                         ipArray[i].ipaddress;
+                        
+                        console.log(ipArray);
                     }
 			
         } 
 		})
-		 console.log(ipArray);	
+		 	
 			
 			
 		 });
