@@ -8,7 +8,7 @@
             
             $.ajax({
                 url: 'ipaddresses.json',
-                data: "",
+                data: { get_param: 'value' },
                 dataType: 'json',
                 success: function(ipaddresses) {
                     
