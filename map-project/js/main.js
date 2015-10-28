@@ -13,9 +13,9 @@
                 success: function(data) {
                     
                     console.log("Success!");
-                
-                    for (var i = 0; i < data.ipaddresses.length; i++){
-                        ipaddress.push(data[i].ipaddress);
+                    var ipArray = data.ipaddresses.ipaddress;
+                    for (var i = 0; i < ipArray.length; i++){
+                        ipArray[i].ipaddress;
                     }
 			
         } 
