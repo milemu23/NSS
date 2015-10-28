@@ -6,7 +6,7 @@
             IPMapper.initializeMap("map");
            
             var ipArray = JSON.parse(ipaddresses);
-           console.log(ipArray);
+           
            for (var i = 0; i < ipArray.length; i++) {
                var ips = ipArray[i];
                
