@@ -9,9 +9,9 @@
                 dataType: "jsonp",
                 success: function(data) {
             
-            var ipAdd = data.ipaddress; 
+            var ipAdd = data.ipaddresses; 
 			console.log("It works!");       
-            IPMapper.addIPArray(ipAdd);
+            IPMapper.addIPArray(ipAdd.ipaddress);
         } 
 			});
 		 });
