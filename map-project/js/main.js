@@ -10,7 +10,7 @@
                 dataType: "json",
                 success: function(data) {
                
-            var ipAdd = data.ipaddresses; 
+            var ipAdd = JSON.parse(data.ipaddresses); 
 			   
             IPMapper.addIPArray(ipAdd.ipaddress);
 			
