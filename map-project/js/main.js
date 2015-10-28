@@ -5,8 +5,10 @@
 	   try {
             IPMapper.initializeMap("map");
            
-            var ipArray = JSON.parse(ipaddresses);
-           console.log(ipArray);
+           $.getJSON("ipaddress.json", function( data ){
+               
+           console.log(data.ipaddress);
+           });
            
            for (var i = 0; i < ipArray.length; i++) {
                var ips = ipArray[i];
