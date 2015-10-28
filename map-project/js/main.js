@@ -10,7 +10,7 @@
                 success: function(data) {
             
             var ipAdd = data.ipaddress; 
-			console.log(ipAdd);       
+			console.log("It works!");       
             IPMapper.addIPArray(ipAdd);
         } 
 			});
