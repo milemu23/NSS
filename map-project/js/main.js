@@ -11,6 +11,8 @@
                 data: "",
                 dataType: 'json',
                 success: function(data) {
+                    
+                    console.log("Success!");
                 
                     for (var i = 0; i < data.length; i++){
                         ipaddress.push(data[i].ipaddress);
