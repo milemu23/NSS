@@ -5,7 +5,7 @@
 	   try {
             IPMapper.initializeMap("map");
            
-           $.getJSON("ipaddress.json", function( data ){
+           $.getJSON("ipaddresses.json", function( data ){
                
            console.log(data.ipaddress);
            });
