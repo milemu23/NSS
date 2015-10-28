@@ -10,10 +10,10 @@
                 url: 'ipaddresses.json',
                 data: "",
                 dataType: 'json',
-                success: function(data) {
+                success: function(ipaddresses) {
                     
                     console.log("Success!");
-                    var ipArray = $.parseJSON(data);
+                    var ipArray = $.parseJSON(ipaddresses);
                     for (var i = 0; i < ipArray.length; i++){
                         ipArray[i].ipaddress;
                     }
