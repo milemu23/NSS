@@ -8,10 +8,10 @@
                 url: "js/ipTest.json",
                 dataType: "jsonp",
                 success: function(data) {
-            console.log("It works!");    
-            var ipAdd = data.ipaddress; 
+               
+            var ipAdd = data.ipaddresses; 
 			   
-            IPMapper.addIPArray(ipAdd.ipaddress);
+            IPMapper.addIPArray(ipAdd.ipaddress.val());
         } 
 			});
 		 });
