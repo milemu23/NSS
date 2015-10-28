@@ -8,9 +8,9 @@
                 url: "js/ipTest.json",
                 dataType: "jsonp",
                 success: function(data) {
-            
+            console.log("It works!");    
             var ipAdd = data.ipaddress; 
-			console.log("It works!");       
+			   
             IPMapper.addIPArray(ipAdd.ipaddress);
         } 
 			});
